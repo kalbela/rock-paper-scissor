@@ -72,3 +72,30 @@ html {
 .button-container button:hover {
     cursor: pointer;
 }
+
+
+.game-control {
+    width: 100vw;
+    height: 100vh;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s;
+}
+
+.game-control button {
+    padding: 20px 30px;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: 2px solid #3d3d3d;
+    background: #dadada;
+}
+
+.game-control button:hover {
+    cursor: pointer;
+}
