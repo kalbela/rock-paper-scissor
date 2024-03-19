@@ -40,7 +40,7 @@ html {
     border: 2px solid #000000;
     border-radius: 10px;
 }
-.character-life span {
+.player-life, .computer-life {
     display: block;
     background: #ffbf00;
     width: 100%;
