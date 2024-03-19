@@ -7,6 +7,10 @@
     font-family: "VT323", monospace;
 }
 
+body {
+    overflow: hidden;
+}
+
 html {
     font-size: 10px;
 }
@@ -103,4 +107,28 @@ html {
 .msg {
     font-size: 2rem;
     position: absolute;
+}
+
+@media (max-width: 920px) {
+    .msg {
+        top: 60px;
+    }
+
+    .character img {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 660px) {
+    .character-container {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 55px;
+    }
+
+    .msg {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
