@@ -1,1 +1,1 @@
-# rock-paper-scissor
+live: https://kalbela.github.io/rock-paper-scissor/
