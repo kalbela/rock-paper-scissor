@@ -19,6 +19,7 @@ let computerLifeMinus;
 
 controlBtn.addEventListener("click", () => {
     gameControlSection.style.opacity = '0';
+    controlBtn.disabled = true;
     allBtn.style.zIndex = '2';
 
     msg.textContent = "";
@@ -87,6 +88,7 @@ function displayWinner(winner) {
 function resetGame() {
     setTimeout(function() {
         gameControlSection.style.opacity = '1';
+        controlBtn.disabled = false;
     }, 3000);
     controlBtn.textContent = "PLAY AGAIN";
     allBtn.style.zIndex = '0';
