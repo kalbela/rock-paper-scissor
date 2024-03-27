@@ -20,6 +20,7 @@ let computerLifeMinus;
 controlBtn.addEventListener("click", () => {
     gameControlSection.style.opacity = '0';
     controlBtn.disabled = true;
+    controlBtn.style.cursor = "default";
     allBtn.style.zIndex = '2';
 
     msg.textContent = "";
@@ -89,6 +90,7 @@ function resetGame() {
     setTimeout(function() {
         gameControlSection.style.opacity = '1';
         controlBtn.disabled = false;
+        controlBtn.style.cursor = "pointer";
     }, 3000);
     controlBtn.textContent = "PLAY AGAIN";
     allBtn.style.zIndex = '0';
